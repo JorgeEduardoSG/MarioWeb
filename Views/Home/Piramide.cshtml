@@ -1,16 +1,70 @@
 ﻿@model int
+  <style>
+        .blanco{
+
+            background:white;
+
+        width: 50px; 
+
+        height: 50px; 
+
+    
+float: left;
+
+
+        }
+
+        </style>
+@{
+
+        int bola=Model-1;
+
+        int superM=0,bocha=bola;
+
+        int ed=bola;
+
+}
 
 
 
     @for (int i = 0 ; i < Model ; i++)
+
     {
+
+        @for (int l = 0;l < bola-superM ; l++){
+
+           <div class="blanco"></div>
+
+        }
+
+        superM++;
+
+        @for (int j=0; j < Model-ed ; j++){
+
          <img  src="~/images/bloque.webp" alt="#">
+
+    }
+
+    ed--;
+
+    @for (int k=0; k < Model-bocha ; k++){
+
+       <img  src="~/images/bloque.webp" alt="#">
+
+    }
+
+    bocha--;
+
+    <div></div>
+
     }
 
     <br/>
 
 
+
            
+
 
 
 
